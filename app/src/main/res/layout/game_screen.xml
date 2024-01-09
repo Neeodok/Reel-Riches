@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_vertical"
+   >
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="355dp"
+        android:layout_height="315dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/reel"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linear_pointer"
+        android:layout_width="330dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:id="@+id/scroll1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingHorizontal="5dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:id="@+id/holder1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scroll2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingHorizontal="5dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:id="@+id/holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </ScrollView>
+        <ScrollView
+            android:id="@+id/scroll3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingHorizontal="5dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:id="@+id/holder3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </ScrollView>
+        <ScrollView
+            android:id="@+id/scroll4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingHorizontal="5dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:id="@+id/holder4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/scroll5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingHorizontal="5dp"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:id="@+id/holder5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <ImageView
+            android:id="@+id/btn_spin"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_start"
+             />
+
+        <ImageView
+            android:id="@+id/btn_down"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/tv_bet_score"
+            android:background="@drawable/btn_arrow_left" />
+
+        <ImageView
+            android:id="@+id/btn_up"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/tv_bet_score"
+            android:background="@drawable/btn_arrow_right" />
+
+        <TextView
+            android:id="@+id/tv_bet_score"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_text"
+            android:fontFamily="@font/nimbus"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_win_score"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_text"
+            android:fontFamily="@font/nimbus"
+            android:gravity="center"
+            android:text="Total Win"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_bank_score"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_text"
+            android:fontFamily="@font/nimbus"
+            android:gravity="center"
+            android:text="Total Balance"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/linewin1"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/linewin2"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toTopOf="@+id/linewin1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/linewin3"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/linewin2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/linewin4"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="45dp"
+        android:visibility="invisible"
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linewin1" />
+
+    <ImageView
+        android:id="@+id/linewin5"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        android:layout_marginTop="45dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linewin4" />
+
+    <ImageView
+        android:id="@+id/linewin6"
+        android:layout_width="400dp"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        android:rotation="40"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/linewin7"
+        android:layout_width="400dp"
+        android:layout_height="10dp"
+        android:background="@drawable/line"
+        android:rotation="-40"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/card_choice"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageButton
+            android:id="@+id/card_front_1"
+            android:layout_width="100dp"
+            android:layout_centerVertical="true"
+            android:layout_height="200dp"/>
+
+        <ImageButton
+            android:id="@+id/card_back_1"
+            android:layout_width="100dp"
+            android:background="@drawable/card_back"
+            android:layout_centerVertical="true"
+            android:layout_height="200dp"/>
+        <ImageButton
+            android:id="@+id/card_front_2"
+            android:layout_width="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_height="200dp"/>
+
+        <ImageButton
+            android:id="@+id/card_back_2"
+            android:layout_width="100dp"
+            android:background="@drawable/card_back"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_height="200dp"/>
+        <TextView
+            android:id="@+id/btn_pass"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:text="PASS"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_text"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

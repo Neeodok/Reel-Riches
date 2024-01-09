@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="340dp"
+        android:layout_height="250dp"
+        android:background="@color/bg_setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:id="@+id/rd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/sound_on"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="100dp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@color/alphaaa"
+                android:checked="true" />
+
+
+            <RadioButton
+                android:id="@+id/sound_off"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@color/alphaaa"
+                android:checked="false" />
+
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/soff"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_sound_on"
+            android:button="@color/alphaaa" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_sound_off"
+            android:button="@color/alphaaa" />
+
+
+        <ImageView
+            android:id="@+id/btn_res_score"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/score" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_rule"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Rules"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/rulesinfo"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_setting"
+        android:gravity="center"
+        android:text="Our mobile app offers you to try your luck on 5-on-5 slots. Every spin is an opportunity to win exciting prizes and huge winnings. The benefits of Seven Game are extremely important to our users! At the beginning of the game, you will be shown all possible combinations, and your luck will decide which one will bring you a win.When you run out of balance, you can add it for a new game in the settings,button Score."
+        android:fontFamily="@font/nimbus"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

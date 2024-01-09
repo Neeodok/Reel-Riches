@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "506389034720",
+    "project_id": "reel-riches-dbb36",
+    "storage_bucket": "reel-riches-dbb36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506389034720:android:4527538c5b0aa27a6d0285",
+        "android_client_info": {
+          "package_name": "redl.bil.vblin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK2YQLfHOtmE_RA0sMw9-Q_Zc7YneNuMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
